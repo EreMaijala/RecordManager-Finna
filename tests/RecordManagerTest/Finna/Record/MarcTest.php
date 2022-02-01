@@ -57,7 +57,7 @@ class MarcTest extends \RecordManagerTest\Base\Record\RecordTest
                     ],
                 ]
             ],
-            'base',
+            'Base',
             [
                 $this->createMock(\RecordManager\Base\Record\PluginManager::class)
             ]
@@ -301,7 +301,7 @@ class MarcTest extends \RecordManagerTest\Base\Record\RecordTest
             Marc::class,
             'marc2.xml',
             [],
-            'base',
+            'Base',
             [
                 $this->createMock(\RecordManager\Base\Record\PluginManager::class)
             ]
@@ -495,7 +495,7 @@ class MarcTest extends \RecordManagerTest\Base\Record\RecordTest
             Marc::class,
             'marc_geo.xml',
             [],
-            'base',
+            'Base',
             [
                 $this->createMock(\RecordManager\Base\Record\PluginManager::class)
             ]
