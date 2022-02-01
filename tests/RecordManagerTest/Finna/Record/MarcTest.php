@@ -701,7 +701,7 @@ class MarcTest extends \RecordManagerTest\Base\Record\RecordTest
             Marc::class,
             'marc-thesis1.xml',
             [],
-            'finna',
+            'Finna',
             [
                 $this->createMock(\RecordManager\Base\Record\PluginManager::class)
             ]
@@ -845,7 +845,7 @@ class MarcTest extends \RecordManagerTest\Base\Record\RecordTest
             Marc::class,
             'marc-thesis2.xml',
             [],
-            'finna',
+            'Finna',
             [
                 $this->createMock(\RecordManager\Base\Record\PluginManager::class)
             ]
