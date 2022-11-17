@@ -87,7 +87,7 @@ class MarcAuthority extends \RecordManager\Base\Record\MarcAuthority
                 ? ['a' => 1, 'b' => 1, 'c' => 1]
                 : ['a' => 1, 'b' => 1];
 
-            foreach ($this->getFields($code) as $field) {
+            foreach ($this->record->getFields($code) as $field) {
                 $result = array_merge(
                     $result,
                     [
