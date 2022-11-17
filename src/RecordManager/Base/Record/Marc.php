@@ -1803,7 +1803,7 @@ class Marc extends AbstractRecord
      */
     public function getRawTopicIds(): array
     {
-        return $this->record->getFieldsSubfields('650', ['0']);
+        return $this->record->getFieldsSubfields('650', ['0'], null);
     }
 
     /**
@@ -1813,7 +1813,7 @@ class Marc extends AbstractRecord
      */
     public function getRawGeographicTopicIds(): array
     {
-        return $this->record->getFieldsSubfields('651', ['0']);
+        return $this->record->getFieldsSubfields('651', ['0'], null);
     }
 
     /**
