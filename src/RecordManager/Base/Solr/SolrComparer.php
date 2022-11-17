@@ -283,12 +283,14 @@ class SolrComparer extends SolrUpdater
 
                 foreach ($solrValues as $solrValue) {
                     if (!in_array($solrValue, $values)) {
-                        $valueDiffs .= "--- $solrValue" . PHP_EOL;
+                        $valueDiffs .= "--- {$solrValue}¶";
+                        $valueDiffs .= PHP_EOL;
                     }
                 }
                 foreach ($values as $value) {
                     if (!in_array($value, $solrValues)) {
-                        $valueDiffs .= "+++ $value " . PHP_EOL;
+                        $valueDiffs .= "+++ {$value}¶";
+                        $valueDiffs .= PHP_EOL;
                     }
                 }
 
